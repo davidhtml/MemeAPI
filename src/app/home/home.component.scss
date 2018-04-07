@@ -1,0 +1,50 @@
+.main {
+  width: 400px;
+  height: auto;
+  padding: 24px;
+  position: relative;
+  margin: 100px auto 100px;
+}
+
+mat-card.positive.mat-card {
+    position: absolute;
+    width: 152px;
+    height: 0px !important;
+    right: -20px;
+    top: -20px;
+    border-radius: 10px;
+    line-height: 1px;
+    background: rgba(255,0,0,.6);
+    color: #fff;
+}
+
+mat-card.negative.mat-card {
+  position: absolute;
+  width: 152px;
+  height: 0px;
+  left: -20px;
+  top: -20px;
+  border-radius: 10px;
+  line-height: 1px;
+  background: rgba(0,0,255,.6);
+  color: #fff;
+}
+#ourImg{
+  max-width: 400px;
+  max-height: 400px;
+}
+.forImg{
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.paginator {
+  text-align: center;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

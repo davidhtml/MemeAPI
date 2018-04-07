@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+ mat-spinner {
+   width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+ }
+ .forSpinner{
+   height: 200px;
+    width: 100%;
+ }

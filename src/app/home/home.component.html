@@ -1,0 +1,26 @@
+<mat-toolbar>
+  <span>MemeApp</span>
+   <span class="example-spacer"></span>
+   <button  mat-button  (click)="onReset()">
+      <mat-icon>autorenew</mat-icon>
+   </button>
+</mat-toolbar>
+<mat-card class="main">
+<mat-card class="negative">Error: <strong>{{klaida}}</strong></mat-card>
+<mat-card class="positive">Correct response: <strong>{{teisingas}}</strong></mat-card>
+<h1 class="heading">  Meme generator</h1>
+<h5 class="forImg">
+  <h3>{{displayName}}</h3>
+  <img id="ourImg" src="{{image}}" alt="">
+</h5>
+<div *ngIf="!image" class="forSpinner">
+  <mat-spinner ></mat-spinner>
+</div>
+<hr>
+<div class="paginator">
+    <button class="prev" mat-button color="primary" (click)="prevPicture()" [disabled]='teisingas > 2'>
+      < Previous </button>
+    <button class="next" mat-button color="accent" (click)="nextPicture()" [disabled]='teisingas > 2'>
+      Next > </button>
+  </div>
+</mat-card>
